@@ -36,6 +36,7 @@ program
 .version('1.0.0')
 .description('Customer Management Software')
 
+// add command
 program
     .command('add')
     .alias('a')
@@ -46,10 +47,22 @@ program
         });
     });
 
+// find command
 program
 .command('find <name>')
 .alias('f')
 .description('Find a client')
 .action(name => findCustomer(name));
+
+// uodate command
+program
+    .command('update <_id>')
+    .alias('u')
+    .description('Update existing client')
+    .action(_id => {
+        prompt(questions).then(answers => {
+            updateClient(_id, answers);
+        });
+    });
 
 program.parse(process.argv);

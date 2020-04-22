@@ -31,7 +31,7 @@ const findCustomer = (name) => {
 
 // updating a customer
 const updateClient = (_id, customer) => {
-    Customer.update({_id}, customer)
+    Customer.updateOne({_id}, customer)
     .then(customer => {
         console.info('Customer has been updated');
         mongoose.connection.close();
