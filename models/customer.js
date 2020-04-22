@@ -7,4 +7,4 @@ const customerSchema = mongoose.Schema({
     email: { type: String }
 })
 
-module.exports = mongoose.model('Custpmer', customerSchema);
+module.exports = mongoose.model('Customer', customerSchema);

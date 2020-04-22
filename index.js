@@ -23,7 +23,7 @@ const findCustomer = (name) => {
     const search = RegExp(name, 'i');
     Customer.find({$or: [{firstName: search}, {lastName: search}]})
     .then(customer => {
-        console.infp(customer);
+        console.info(customer);
         console.info(`${customer.length} matches`);
         mongoose.connection.close();
     })

@@ -8,11 +8,11 @@ program
 .version('1.0.0')
 .description('Customer Management Software')
 
-program.command('add <firstname> <lastname> <phone> <email> ')
+program.command('add <firstName> <lastName> <phone> <email> ')
 .alias('a')
 .description('Add a client')
-.action((firstname, lastname, phone, email) => {
-    addCustomer({firstname, lastname, phone, email})
+.action((firstName, lastName, phone, email) => {
+    addCustomer({firstName, lastName, phone, email})
 });
 
 program
