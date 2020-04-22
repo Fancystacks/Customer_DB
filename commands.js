@@ -1,4 +1,3 @@
-#!/usr/bin/env_node
 const program = require('commander');
 const { prompt } = require('inquirer');
 const {
