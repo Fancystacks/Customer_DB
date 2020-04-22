@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 // connect to the database
 const db = mongoose.connect('mongodb://localhost:27017/customer_db', {
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true 
 });
 
 const Customer = require('./models/customer');
@@ -12,7 +13,7 @@ const Customer = require('./models/customer');
 const addCustomer = (customer) => {
     Customer.create(customer).then(customer => {
         console.info('New customer added');
-        db.close();
+        mongoose.connection.close();
     })
 }
 
@@ -24,7 +25,7 @@ const findCustomer = (name) => {
     .then(customer => {
         console.infp(customer);
         console.info(`${customer.length} matches`);
-        db.close();
+        mongoose.connection.close();
     })
 }
 
