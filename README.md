@@ -1,7 +1,5 @@
 # Client Management Software
 
-![customerCLI](https://user-images.githubusercontent.com/38336934/79935258-b25d7080-8411-11ea-8c5f-4ac042906d55.gif)
-
 ## Download:
 
 - `npm install` inquirer, commander and mongoose
@@ -20,6 +18,8 @@
 
       - A success message will appear as file is saved to the output
 
+![customerCLI](https://user-images.githubusercontent.com/38336934/79935258-b25d7080-8411-11ea-8c5f-4ac042906d55.gif)
+
 ## Find:
 
 - Type 'find' followed by a first or last name
@@ -30,4 +30,4 @@
 
 - Type 'list' to display all clients
 
-<img src="https://user-images.githubusercontent.com/38336934/79935627-a8883d00-8412-11ea-9a61-919b3c33ed4e.png" width="540" height="300">
+<img src="https://user-images.githubusercontent.com/38336934/79935627-a8883d00-8412-11ea-9a61-919b3c33ed4e.png" width="500" height="300">
