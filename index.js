@@ -40,7 +40,7 @@ const updateClient = (_id, customer) => {
 
 // deleting a customer
 const removeClient = (_id) => {
-    Customer.remove({ _id })
+    Customer.deleteOne({ _id })
     .then(customer => {
         console.info('Customer has been removed');
         mongoose.connection.close();

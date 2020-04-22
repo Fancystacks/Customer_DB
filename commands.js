@@ -54,7 +54,7 @@ program
 .description('Find a client')
 .action(name => findCustomer(name));
 
-// uodate command
+// update command
 program
     .command('update <_id>')
     .alias('u')
@@ -64,5 +64,12 @@ program
             updateClient(_id, answers);
         });
     });
+
+// delete command
+program
+.command('remove <_id>')
+.alias('r')
+.description('Remove existing client')
+.action(_id => removeClient(_id));
 
 program.parse(process.argv);
