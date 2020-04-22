@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Fancystacks/Customer_DB#readme",
   "dependencies": {
+    "commander": "^5.0.0",
     "inquirer": "^7.1.0",
     "mongoose": "^5.9.10"
   }
