@@ -72,4 +72,11 @@ program
 .description('Remove existing client')
 .action(_id => removeClient(_id));
 
+// display all command
+program
+.command('list')
+.alias('l')
+.description('All existing client')
+.action(() => displayCustomers());
+
 program.parse(process.argv);
