@@ -33,13 +33,6 @@ program
 .version('1.0.0')
 .description('Customer Management Software')
 
-// program.command('add <firstName> <lastName> <phone> <email> ')
-// .alias('a')
-// .description('Add a client')
-// .action((firstName, lastName, phone, email) => {
-//     addCustomer({firstName, lastName, phone, email})
-// });
-
 program
     .command('add')
     .alias('a')
@@ -56,6 +49,13 @@ program
 .description('Find a client')
 .action(name => findCustomer(name));
 
-
+// updating a customer
+const updateClient = (_id, customer) => {
+    Customer.update({_id}, customer)
+    .then(customer => {
+        console.info('Customer has been updated');
+        mongoose.connection.close();
+    });
+}
 
 program.parse(process.argv);
