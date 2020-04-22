@@ -27,3 +27,8 @@ const findCustomer = (name) => {
         db.close();
     })
 }
+
+module.exports = {
+    addCustomer,
+    findCustomer
+}
