@@ -2,7 +2,10 @@ const program = require('commander');
 const { prompt } = require('inquirer');
 const {
     addCustomer,
-    findCustomer
+    findCustomer,
+    removeClient,
+    updateClient,
+    displayCustomers
 } = require('./index');
 
 // customer question inquirer prompt 
