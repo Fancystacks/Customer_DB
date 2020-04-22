@@ -8,7 +8,7 @@
 
 ### _Type `--help` to get an assistance menu_
 
-<img src="https://user-images.githubusercontent.com/38336934/79935636-ab832d80-8412-11ea-961b-01ba550adac4.png" width="540" height="300">
+<img src="https://user-images.githubusercontent.com/38336934/79935636-ab832d80-8412-11ea-961b-01ba550adac4.png" width="4100" height="410=0">
 
 ### _The application has a `symlink`, and can be used globally outside of the directory_
 
@@ -30,4 +30,4 @@
 
 - Type 'list' to display all clients
 
-<img src="https://user-images.githubusercontent.com/38336934/79935627-a8883d00-8412-11ea-9a61-919b3c33ed4e.png" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/38336934/79935627-a8883d00-8412-11ea-9a61-919b3c33ed4e.png" width="410" height="410">
