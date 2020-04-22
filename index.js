@@ -29,7 +29,38 @@ const findCustomer = (name) => {
     })
 }
 
+// updating a customer
+const updateClient = (_id, customer) => {
+    Customer.update({_id}, customer)
+    .then(customer => {
+        console.info('Customer has been updated');
+        mongoose.connection.close();
+    });
+}
+
+// deleting a customer
+const removeClient = (_id) => {
+    Customer.remove({ _id })
+    .then(customer => {
+        console.info('Customer has been removed');
+        mongoose.connection.close();
+    });
+}
+
+// display customers
+const displayCustomers = () => {
+    Customer.find()
+    .then(customers => {
+        console.info(customers);
+        console.info(`${customers.length} matches found`);
+        mongoose.connection.close();
+    })
+}
+
 module.exports = {
     addCustomer,
-    findCustomer
+    findCustomer,
+    updateClient,
+    removeClient,
+    displayCustomers
 }
